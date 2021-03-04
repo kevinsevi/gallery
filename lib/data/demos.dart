@@ -127,7 +127,7 @@ Map<String, GalleryDemo> studies(GalleryLocalizations localizations) {
       studyId: 'shrine',
     ),
     'rally': GalleryDemo(
-      title: 'Rally',
+      title: 'Recibos',
       subtitle: localizations.rallyDescription,
       category: GalleryDemoCategory.study,
       studyId: 'rally',

@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
     final localizations = GalleryLocalizations.of(context);
     final studyDemos = studies(localizations);
     final carouselCards = <Widget>[
-      _CarouselCard(
+      /*_CarouselCard(
         demo: studyDemos['reply'],
         asset: const AssetImage(
           'assets/studies/reply_card.png',
@@ -57,8 +57,8 @@ class HomePage extends StatelessWidget {
         assetDarkColor: const Color(0xFF1D2327),
         textColor: Colors.white,
         studyRoute: reply_routes.homeRoute,
-      ),
-      _CarouselCard(
+      ),*/
+      /*_CarouselCard(
         demo: studyDemos['shrine'],
         asset: const AssetImage(
           'assets/studies/shrine_card.png',
@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
         assetDarkColor: const Color(0xFF543B3C),
         textColor: shrineBrown900,
         studyRoute: shrine_routes.loginRoute,
-      ),
+      ),*/
       _CarouselCard(
         demo: studyDemos['rally'],
         textColor: RallyColors.accountColors[0],
@@ -88,7 +88,7 @@ class HomePage extends StatelessWidget {
         assetDarkColor: const Color(0xFF253538),
         studyRoute: rally_routes.loginRoute,
       ),
-      _CarouselCard(
+      /*_CarouselCard(
         demo: studyDemos['crane'],
         asset: const AssetImage(
           'assets/studies/crane_card.png',
@@ -102,8 +102,8 @@ class HomePage extends StatelessWidget {
         assetDarkColor: const Color(0xFF591946),
         textColor: cranePurple700,
         studyRoute: crane_routes.defaultRoute,
-      ),
-      _CarouselCard(
+      ),*/
+      /*_CarouselCard(
         demo: studyDemos['fortnightly'],
         asset: const AssetImage(
           'assets/studies/fortnightly_card.png',
@@ -116,8 +116,8 @@ class HomePage extends StatelessWidget {
         ),
         assetDarkColor: const Color(0xFF1F1F1F),
         studyRoute: fortnightly_routes.defaultRoute,
-      ),
-      _CarouselCard(
+      ),*/
+      /*_CarouselCard(
         demo: studyDemos['starterApp'],
         asset: const AssetImage(
           'assets/studies/starter_card.png',
@@ -131,7 +131,7 @@ class HomePage extends StatelessWidget {
         assetDarkColor: const Color(0xFF3F3D45),
         textColor: Colors.black,
         studyRoute: starter_app_routes.defaultRoute,
-      ),
+      ),*/
     ];
 
     if (isDesktop) {
@@ -180,13 +180,13 @@ class HomePage extends StatelessWidget {
               height: carouselHeight,
               child: _DesktopCarousel(children: carouselCards),
             ),
-            Padding(
+            /*Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: _horizontalDesktopPadding,
               ),
               child: _CategoriesHeader(),
-            ),
-            Container(
+            ),*/
+            /*Container(
               height: 585,
               padding: const EdgeInsets.symmetric(
                 horizontal: _horizontalDesktopPadding,
@@ -196,7 +196,7 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: spaceBetween(28, desktopCategoryItems),
               ),
-            ),
+            ),*/
             Padding(
               padding: const EdgeInsetsDirectional.only(
                 start: _horizontalDesktopPadding,
@@ -399,12 +399,12 @@ class _AnimatedHomePageState extends State<_AnimatedHomePage>
               restorationId: 'home_carousel',
               children: widget.carouselCards,
             ),
-            Container(
+            /*Container(
               margin:
                   const EdgeInsets.symmetric(horizontal: _horizontalPadding),
               child: _CategoriesHeader(),
-            ),
-            _AnimatedCategoryItem(
+            ),*/
+            /*_AnimatedCategoryItem(
               startDelayFraction: 0.00,
               controller: _animationController,
               child: CategoryListItem(
@@ -420,8 +420,8 @@ class _AnimatedHomePageState extends State<_AnimatedHomePage>
                   onTap: (shouldOpenList) {
                     _isMaterialListExpanded.value = shouldOpenList;
                   }),
-            ),
-            _AnimatedCategoryItem(
+            ),*/
+            /*_AnimatedCategoryItem(
               startDelayFraction: 0.05,
               controller: _animationController,
               child: CategoryListItem(
@@ -437,8 +437,8 @@ class _AnimatedHomePageState extends State<_AnimatedHomePage>
                   onTap: (shouldOpenList) {
                     _isCupertinoListExpanded.value = shouldOpenList;
                   }),
-            ),
-            _AnimatedCategoryItem(
+            ),*/
+            /*_AnimatedCategoryItem(
               startDelayFraction: 0.10,
               controller: _animationController,
               child: CategoryListItem(
@@ -453,7 +453,7 @@ class _AnimatedHomePageState extends State<_AnimatedHomePage>
                   onTap: (shouldOpenList) {
                     _isOtherListExpanded.value = shouldOpenList;
                   }),
-            ),
+            ),*/
           ],
         ),
         Align(
